@@ -1,15 +1,14 @@
-/*
-Template for IMA's Creative Coding Lab 
-
-Project A: Generative Creatures
-CCLaboratories Biodiversity Atlas 
-*/
-
-function setup() {
-    let canvas = createCanvas(800,500)
-    canvas.id("p5-canvas");
-    canvas.parent("p5-canvas-container");
-  }
+// function setup() {
+//     createCanvas(400, 400);
+//   }
+  
+  // Set up for VS code in the following
+  
+  function setup() {
+      let canvas = createCanvas(800,500)
+      canvas.id("p5-canvas");
+      canvas.parent("p5-canvas-container");
+    }
   
   function draw() {
     background(220);
@@ -17,6 +16,8 @@ function setup() {
     // function CALL, execute, run,
     drawCar(100, 100);
     drawCar(250, 150);
+  
+    text("this is a test page for project A", 200, 300);
   }
   
   // function DEFINITION
@@ -51,9 +52,9 @@ function setup() {
     fill(0);
     // circle(-25, 40, 30);
     // circle(25, 40, 30);
-    
-    drawWheels(-25,40, speed)
-    drawWheels(25,40, speed)
+  
+    drawWheels(-25, 40, speed);
+    drawWheels(25, 40, speed);
   
     // helping point
     fill("red");
@@ -66,9 +67,9 @@ function setup() {
     // can repeatly used because it is not global
     push();
     translate(xPos, yPos);
-    rotate(frameCount*0.05)
+    rotate(frameCount * 0.05);
     // drawings comes
-    ellipse(0,0, 33,28)
+    ellipse(0, 0, 33, 28);
   
     // helping point
     fill("red");
